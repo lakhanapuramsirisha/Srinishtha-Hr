@@ -1,9 +1,9 @@
 import React from 'react'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Layout from './Layout/Layout'
-import Dashboard from './pages/Dashboard'
+import Dashboard from './pages/Hr/Dashboard'
 import Onboarding from './pages/Onboarding'
-import Attendance from './pages/Attendance'
+import Attendance from './pages/Hr/Attendance'
 import EmployeeDirectory from './pages/EmployeeDirectory'
 
 function App() {
