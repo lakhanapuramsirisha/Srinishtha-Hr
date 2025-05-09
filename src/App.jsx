@@ -2,9 +2,10 @@ import React from 'react'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Layout from './Layout/Layout'
 import Dashboard from './pages/Hr/Dashboard'
-import Onboarding from './pages/Onboarding'
+// Update the import path for Onboarding
+import Onboarding from './pages/Hr/Onboarding'
 import Attendance from './pages/Hr/Attendance'
-import EmployeeDirectory from './pages/EmployeeDirectory'
+import EmployeeDirectory from './pages/Hr/EmployeeDirectory'
 
 function App() {
   return (
