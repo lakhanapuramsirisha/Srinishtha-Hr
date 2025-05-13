@@ -10,30 +10,35 @@ export default function Sidebar() {
       label: 'HR',
       icon: '👥',
       submenu: [
-        { label: 'Dashboard', path: '/' },
-        { label: 'Employee Directory', path: '/employee-directory' },
-        { label: 'Onboarding & Exit', path: '/onboarding' },
-        { label: 'Attendance', path: '/attendance' }
+        { label: 'Dashboard', path: '/hr-management' },
+        { label: 'Employee Directory', path: '/hr-management/employee-directory' },
+        { label: 'Onboarding & Exit', path: '/hr-management/onboarding' },
+        { label: 'Attendance', path: '/hr-management/attendance' }
       ]
     },
     {
       label: 'Time Management',
-      icon: '⏰',
-      path: '/time-management'
+      icon: '👥',
+      submenu: [
+        { label: 'Daily Checkin', path: '/time-management/dailycheckin' },
+        { label: 'Time Sheet', path: '/time-management/timesheet' },
+        { label: 'WorkLog Analytics', path: '/time-management/ worklog-analytics' },
+        
+      ]
     },
     {
       label: 'Leave Management',
-      icon: '📅',
-      path: '/leave-management'
-    },
-    {
-      label: 'Performance',
-      icon: '📈',
+      icon: '👥',
       submenu: [
-        { label: 'Reviews', path: '/performance/reviews' },
-        { label: 'Goals', path: '/performance/goals' },
+        { label: 'Application Flow', path: '/leave-management/applicationform' },
+        { label: 'Approval Flow', path: '/leave-management/approvalflow' },
+        { label: 'Leave ApplicationForm', path: '/leave-management/leaveapplicationform' },
+        { label: 'Leave Policy', path: '/leave-management/leave-management/leavePolicy' },
+        { label: 'Leave Report', path: '/leave-management/leavereport' },
+        { label: 'Leave Status', path: '/leave-management/leavestatus' },
+
       ]
-    }
+    },
   ];
 
   const toggleMenu = (label) => {
